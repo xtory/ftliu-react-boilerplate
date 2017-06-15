@@ -1,0 +1,78 @@
+{
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "parser": "babel-eslint",
+    "extends": ["airbnb"],
+    "settings": {
+        "import/resolver": {
+            "webpack": {
+                "config": "webpack.config.js"
+            }
+        }
+    },
+
+    "rules": {
+        "arrow-body-style": 0,
+        "arrow-parens": 0,
+        "arrow-spacing": 0,
+        "brace-style": [2, "stroustrup", {"allowSingleLine": true}],
+        "comma-dangle": [2, "never"],
+        "eol-last": 0,
+        "newline-per-chained-call": 0,
+        "indent": [2, 4, { 
+            "MemberExpression": 1, 
+            "SwitchCase": 1,
+            "CallExpression": {"arguments": 1}
+        }],
+        "key-spacing": [2, { 
+            "singleLine": {"beforeColon": false, "afterColon": false, "mode": "strict"},
+            "multiLine": {"beforeColon": false, "afterColon": true, "mode": "strict"}
+        }],
+        "linebreak-style": 0,
+        "no-else-return": 0,
+        "no-lonely-if": 0,
+        "no-mixed-operators": [2, "allowSamePrecedence": true],
+        "no-nested-ternary": 0,
+        "no-plusplus": 0,
+        "no-param-reassign": 0,
+        "no-underscore-dangle": 0,
+        "no-unused-expressions": [2, 
+            {"allowShortCircuit": true, "allowTernary": true}
+        ],
+        "no-unused-vars": ["warn", {"varsIgnorePattern": "log"}],
+        "object-property-newline": 0,
+        "object-curly-spacing": 0,
+        "one-var": 0,
+        "one-var-declaration-per-line": 0,
+        "prefer-const": 0,
+        "prefer-template": 0,
+        "semi": [2,"never"],
+        "spaced-comment": 0,
+        "space-infix-ops": 0,
+
+        "import/no-named-as-default-member": 0,
+        "import/no-named-default": 0,
+        
+        "jsx-a11y/no-static-element-interactions": 0,
+        "jsx-quotes": [2, "prefer-single"],
+
+        "react/forbid-prop-types": 0,
+        "react/jsx-boolean-value": 0,
+        "react/jsx-closing-bracket-location": [2, "after-props"],
+        "react/jsx-filename-extension": 0,
+        "react/jsx-indent": [2, 4],
+        "react/jsx-indent-props": [2, 4],
+        "react/jsx-no-bind": 0,
+        "react/jsx-wrap-multilines": 0,
+        "react/no-danger": 0,
+        "react/no-find-dom-node": 1,
+        "react/no-multi-comp": 0,
+        "react/prefer-es6-class": 0,
+        "react/prefer-stateless-function": 0,
+        
+        "max-len": 0,
+        "import/no-mutable-exports": 0
+    }
+}
